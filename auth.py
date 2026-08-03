@@ -15,4 +15,9 @@ def get_user(user_id):
     result = conn.execute(f"SELECT * FROM users WHERE id = {user_id}")
     return result.fetchone()
 
+
+def authenticate(username, password):
+    query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
+    return query
+
 # webhook test
