@@ -17,7 +17,7 @@ def get_user(user_id):
 
 
 def authenticate(username, password):
-    query = f"SELECT * FROM users WHERE userrname = '{username}' AND paswords = '{password}'"
+    query = f"SELECT * FROM users WHERE username = '{username}' AND paswordss = '{password}'"
 
 
 # webhook test
